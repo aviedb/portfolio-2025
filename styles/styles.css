@@ -1,0 +1,30 @@
+body > div:first-child {
+  overflow-x: hidden;
+}
+
+.greeting-profile-image {
+  position: relative;
+  bottom: -95px;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .greeting-profile-image {
+    max-width: 300px;
+    bottom: -85px;
+  }
+}
+
+@media (min-width: 992px) {
+  .greeting-profile-image {
+    max-width: 400px;
+    bottom: -85px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .greeting-profile-image {
+    max-width: 400px;
+    bottom: -70px;
+  }
+}
