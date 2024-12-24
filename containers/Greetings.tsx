@@ -13,7 +13,7 @@ const Greetings = () => {
     <main>
       <div className="position-relative">
         <section className="section section-lg section-shaped">
-          <div className="shape shape-style-1 bg-gradient-info" />
+          <div className="shape shape-style-1 bg-gradient-primary" />
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
               <Row>

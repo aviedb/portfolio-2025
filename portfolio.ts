@@ -26,7 +26,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:aviedbachmid.ab@gmail.com",
+  email: "mailto:hello@aviedb.me",
   linkedin: "https://www.linkedin.com/in/aviedb/",
   github: "https://github.com/aviedb",
   instagram: "https://www.instagram.com/aviedb",
