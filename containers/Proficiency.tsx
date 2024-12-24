@@ -39,7 +39,7 @@ const Proficiency = () => {
             })}
           </Col>
           <Col lg="6">
-            {/* <DisplayLottie animationPath="/lottie/build.json" /> */}
+            <DisplayLottie animationPath="/lottie/build.json" />
           </Col>
         </Row>
       </Fade>

@@ -2,29 +2,133 @@ body > div:first-child {
   overflow-x: hidden;
 }
 
-.greeting-profile-image {
+.parallax {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+#stars1 {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+  animation: animStarSmall 150s linear infinite;
+  position: relative;
+}
+
+#stars1::after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: transparent;
+  animation: animStarMed 100s linear infinite;
+  position: relative;
+}
+
+#stars2::after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: transparent;
+  animation: animStarBig 50s linear infinite;
+  position: relative;
+}
+
+#stars3::after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+@keyframes animStarSmall {
+  from { transform: translateY(-2000px); }
+  to   { transform: translateY(0px); }
+}
+
+@keyframes animStarMed {
+  from { transform: translateY(-2000px); }
+  to   { transform: translateY(0px); }
+}
+
+@keyframes animStarBig {
+  from { transform: translateY(-2000px); }
+  to   { transform: translateY(0px); }
+}
+
+#nav-title {
+	font-family: Augestina;
+	text-transform: capitalize;
+	margin-top: unset !important;
+	margin-bottom: unset !important;
+}
+
+#greeting-profile-image {
   position: relative;
   bottom: -95px;
   max-width: 300px;
 }
 
+#profile-container {
+  margin-top: -95px;
+}
+
 @media (min-width: 768px) {
-  .greeting-profile-image {
+  #greeting-profile-image {
     max-width: 300px;
     bottom: -85px;
+  }
+
+  #profile-container {
+    margin-top: -85px;
   }
 }
 
 @media (min-width: 992px) {
-  .greeting-profile-image {
+  #greeting-profile-image {
     max-width: 400px;
     bottom: -85px;
+  }
+  #profile-container {
+    margin-top: unset;
   }
 }
 
 @media (min-width: 1200px) {
-  .greeting-profile-image {
+  #greeting-profile-image {
     max-width: 400px;
     bottom: -70px;
+  }
+
+  #profile-container {
+    margin-top: unset;
   }
 }

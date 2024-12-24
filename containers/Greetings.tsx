@@ -13,17 +13,7 @@ const Greetings = () => {
     <main>
       <div className="position-relative">
         <section className="section section-lg section-shaped">
-          <div className="shape shape-style-1 bg-gradient-info">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
+          <div className="shape shape-style-1 bg-gradient-info" />
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
               <Row>
@@ -46,14 +36,12 @@ const Greetings = () => {
                     </div>
                   )}
                 </Col>
-                <Col lg="6" className="d-flex justify-content-center align-items-center">
+                <Col lg="6" id="profile-container" className="d-flex justify-content-center align-items-center">
                   <img
                     src="/profile.png"
                     alt="Profile"
-                    className="img-fluid greeting-profile-image"
-                    style={{
-                      position: "relative",
-                    }}
+                    className="img-fluid"
+                    id="greeting-profile-image"
                   />
                 </Col>
               </Row>

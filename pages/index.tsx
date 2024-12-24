@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { GetServerSideProps } from 'next';
+const ParallaxBackground = dynamic(() => import("../containers/ParallaxBackground"));
 const Navigation = dynamic(() => import("../components/Navigation"));
 const Greetings = dynamic(() => import("../containers/Greetings"));
 const Skills = dynamic(() => import("../containers/Skills"));
@@ -16,6 +17,7 @@ import { GithubUserType } from "../types";
 export default function Home({ githubProfileData }: { githubProfileData: GithubUserType }) {
   return (
     <div>
+      <ParallaxBackground />
       <SEO />
       <Navigation />
       <Greetings />

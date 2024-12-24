@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: "aviedb",
   title: "Hello World! I'm Avied",
   description:
-    "I'm a passionate Frontend Developer with over 2 years of professional experience specializing in React.js and React Native technologies. I've successfully developed responsive, user-friendly web interfaces and mobile apps, focusing on performance and accessibility. I excel at collaborating with global teams and delivering high-quality projects.",
+    "I'm a passionate Frontend Developer with over 3 years of professional experience specializing in React.js and React Native technologies. I've successfully developed responsive, user-friendly web interfaces and mobile apps, focusing on performance and accessibility. I excel at collaborating with global teams and delivering high-quality projects.",
   resumeLink: "#",
 };
 
@@ -51,7 +51,7 @@ export const skillsSection: SkillsSectionType = {
         },
         {
           skillName: "NextJS",
-          iconifyTag: "logos:nextjs",
+          iconifyTag: "vscode-icons:file-type-light-next",
         },
         {
           skillName: "JavaScript",
@@ -169,7 +169,7 @@ export const projects: ProjectType[] = [
   {
     name: "Go Coco AI",
     desc: "A mobile app for AI-driven art creation and print-on-demand services.",
-    link: "https://gococo.ai",
+    link: "https://apps.apple.com/us/app/go-coco-ai/id6469733391",
   },
   {
     name: "Jobhere (PWA)",
