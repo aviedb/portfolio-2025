@@ -22,7 +22,7 @@ const Navigation = () => {
       <header className="header-global">
         <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
           <Container>
-            <NavbarBrand href="/" className="mr-lg-5">
+            <NavbarBrand href="/" className="mr-lg-5" style={{ position: 'relative', bottom: '-8px' }}>
               <h2 className="text-white" id="nav-title">
                 {greetings.name}
               </h2>

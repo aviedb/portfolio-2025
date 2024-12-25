@@ -18625,7 +18625,7 @@ textarea[resize="horizontal"] {
 	bottom: 0;
 }
 .separator-bottom svg {
-	bottom: 0;
+	bottom: -1px;
 }
 
 .separator-inverse {

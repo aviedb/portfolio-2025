@@ -11,14 +11,14 @@ const Experience = () => {
     <Fade bottom duration={2000}>
       <section className="section section-lg">
         <Container>
-          <div className="d-flex p-4">
+          <div className="d-flex p-4 align-items-center">
             <div>
               <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                 <i className="ni ni-briefcase-24 text-primary" />
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-primary">Experience</h4>
+              <h4 className="display-3 text-primary mb-0">Experience</h4>
             </div>
           </div>
           <Row className="row-grid align-items-start">

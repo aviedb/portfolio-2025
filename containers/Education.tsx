@@ -11,14 +11,14 @@ const Education = () => {
     <Fade bottom duration={2000}>
       <section className="section pb-0 bg-gradient-primary my-5">
         <Container>
-          <div className="d-flex px-3">
+          <div className="d-flex px-3 align-items-center">
             <div>
               <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                 <i className="ni ni-books text-primary" />
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-white">Education</h4>
+              <h4 className="display-3 text-white mb-0">Education</h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">
@@ -40,7 +40,7 @@ const Education = () => {
             x="0"
             y="0"
           >
-            <polygon className="fill-white" points="2560 0 2560 100 0 100" />
+            <polygon className="fill-white" points="0 0 2560 100 0 100" />
           </svg>
         </div>
       </section>

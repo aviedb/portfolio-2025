@@ -11,14 +11,14 @@ const Feedbacks = () => {
     <Fade bottom duration={2000}>
       <section className="section section-lg">
         <Container>
-          <div className="d-flex p-4">
+          <div className="d-flex p-4 align-items-center">
             <div>
               <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                 <i className="fa fa-star text-primary" />
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-primary">Clients Feedback</h4>
+              <h4 className="display-3 text-primary mb-0">Clients Feedback</h4>
             </div>
           </div>
           <Row className="g-3">
