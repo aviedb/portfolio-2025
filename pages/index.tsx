@@ -1,8 +1,11 @@
 import dynamic from "next/dynamic";
-import { GetServerSideProps } from 'next';
-const ParallaxBackground = dynamic(() => import("../containers/ParallaxBackground"));
-const Navigation = dynamic(() => import("../components/Navigation"));
-const Greetings = dynamic(() => import("../containers/Greetings"));
+import SEO from "../components/SEO";
+import { openSource } from "../portfolio";
+import { GithubUserType } from "../types";
+
+const Navigation = dynamic(() => import("../components/Navigation"), { ssr: true });
+const Greetings = dynamic(() => import("../containers/Greetings"), { ssr: true });
+const ParallaxBackground = dynamic(() => import("../containers/ParallaxBackground"), { ssr: false });
 const Skills = dynamic(() => import("../containers/Skills"));
 const Proficiency = dynamic(() => import("../containers/Proficiency"));
 const Education = dynamic(() => import("../containers/Education"));
@@ -10,38 +13,34 @@ const Experience = dynamic(() => import("../containers/Experience"));
 const Projects = dynamic(() => import("../containers/Projects"));
 const Feedbacks = dynamic(() => import("../containers/Feedbacks"));
 const GithubProfileCard = dynamic(() => import("../components/GithubProfileCard"));
-import { openSource } from "../portfolio";
-import SEO from "../components/SEO";
-import { GithubUserType } from "../types";
 
 export default function Home({ githubProfileData }: { githubProfileData: GithubUserType }) {
   return (
     <div>
-      <ParallaxBackground />
       <SEO />
       <Navigation />
-      <Greetings />
-      <Skills />
-      <Proficiency />
-      <Education />
-      <Experience />
-      <Feedbacks />
-      <Projects />
-      <GithubProfileCard {...githubProfileData} />
+      <ParallaxBackground />
+      <main>
+        <Greetings />
+        <Skills />
+        <Proficiency />
+        <Education />
+        <Experience />
+        <Feedbacks />
+        <Projects />
+        <GithubProfileCard {...githubProfileData} />
+      </main>
     </div>
   );
 }
 
-// Home.prototype = {
-//   githubProfileData: PropTypes.object.isRequired,
-// };
-
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps = async () => {
   const githubProfileData: GithubUserType = await fetch(
     `https://api.github.com/users/${openSource.githubUserName}`
   ).then(res => res.json());
 
   return {
     props: { githubProfileData },
+    revalidate: 60 * 60,
   };
 }

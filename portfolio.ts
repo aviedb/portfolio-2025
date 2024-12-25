@@ -128,7 +128,7 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: "Freelance Frontend Developer",
+    role: "Frontend Developer",
     company: "Ginap Consulting",
     companyLogo: "/img/icons/common/ginap.png",
     date: "Aug 2023 - Present",
@@ -158,8 +158,13 @@ export const projects: ProjectType[] = [
   },
   {
     name: "LA-Reflect",
-    desc: "LA-Reflects aims to help teachers to create activities with multimedia content and helps tracking learning interactions and artefact created by their students.",
+    desc: "LA-Reflect aims to help teachers to create activities with multimedia content and helps tracking learning interactions and artefact created by their students.",
     link: "http://kyoto-u.amazing7studios.com/",
+  },
+  {
+    name: "RouteSegmentation",
+    desc: "RouteSegmentation is an algorithm designed to identify perimeter area surrounding travel path. This web demonstrate the algorithm for ICITEE 2024.",
+    link: "https://routesegmentation-icitee.vercel.app",
   },
   {
     name: "Agriko",
@@ -198,6 +203,8 @@ export const seoData: SEODataType = {
   author: "Muhammad Avied Bachmid",
   image: "https://avatars.githubusercontent.com/u/22285186?v=4",
   url: "https://aviedb.me",
+  jobtitle: experience[0].role,
+  organization: experience[0].company,
   keywords: [
     "Avied",
     "Avied Bachmid",
@@ -208,4 +215,9 @@ export const seoData: SEODataType = {
     "Avied Portfolio ",
     "Avied Bachmid Portfolio",
   ],
+  links: [
+    "https://github.com/aviedb",
+    "https://www.linkedin.com/in/aviedb/",
+    "https://www.instagram.com/aviedb"
+  ]
 };

@@ -5,6 +5,9 @@ export type SEODataType = {
   image?: string;
   url?: string;
   keywords: string[];
+  jobtitle?: string;
+  organization?: string;
+  links?: string[];
 };
 
 // https://www.typescriptlang.org/docs/handbook/2/objects.html#index-signatures
