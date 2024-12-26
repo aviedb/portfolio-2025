@@ -165,11 +165,11 @@ export const projects: ProjectType[] = [
     desc: "RouteSegmentation is an algorithm designed to identify perimeter area surrounding travel path. This web demonstrate the algorithm for ICITEE 2024.",
     link: "https://routesegmentation-icitee.vercel.app",
   },
-  {
-    name: "Agriko",
-    desc: "A web app for agricultural supply chain management, enhancing efficiency and traceability.",
-    link: "http://agriko.com",
-  },
+  // {
+  //   name: "Agriko",
+  //   desc: "A web app for agricultural supply chain management, enhancing efficiency and traceability.",
+  //   link: "http://agriko.com",
+  // },
   {
     name: "Go Coco AI",
     desc: "A mobile app for AI-driven art creation and print-on-demand services.",
