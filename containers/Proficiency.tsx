@@ -14,7 +14,7 @@ const Proficiency = () => {
 
   return (
     <Container className="section section-lg">
-      <Fade bottom duration={2000}>
+      <Fade bottom duration={1000}>
         <Row>
           <Col lg="6">
             <h1 className="h1">Proficiency</h1>

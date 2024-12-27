@@ -8,7 +8,7 @@ const Education = () => {
   if (!educationInfo) return null;
 
   return (
-    <Fade bottom duration={2000}>
+    <Fade bottom duration={1000}>
       <section className="section pb-0 bg-gradient-primary my-5">
         <Container>
           <div className="d-flex px-3 align-items-center">

@@ -8,13 +8,13 @@ const Feedbacks = () => {
   if (!feedbacks) return null;
 
   return (
-    <Fade bottom duration={2000}>
+    <Fade bottom duration={1000}>
       <section className="section section-lg">
         <Container>
           <div className="d-flex p-4 align-items-center">
             <div>
-              <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                <i className="fa fa-star text-primary" />
+              <div className="icon icon-lg icon-shape bg-primary shadow rounded-circle text-white">
+                <i className="fa fa-star text-white" />
               </div>
             </div>
             <div className="pl-4">

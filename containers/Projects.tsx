@@ -8,17 +8,17 @@ const Projects = () => {
   if (!projects) return null;
 
   return (
-    <Fade bottom duration={2000}>
+    <Fade bottom duration={1000}>
       <section className="section section-lg">
         <Container>
           <div className="d-flex p-4 align-items-center">
             <div>
-              <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                <i className="ni ni-laptop text-primary" />
+              <div className="icon icon-lg icon-shape bg-primary shadow rounded-circle text-white">
+                <i className="ni ni-laptop text-white" />
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-primary mb-0">Projects</h4>
+              <h4 className="display-3 text-primary mb-0">Key Projects</h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">
