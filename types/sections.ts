@@ -63,6 +63,15 @@ export type EducationType = {
   descBullets?: string[];
 };
 
+export type PublicationType = {
+  title: string;
+  authors: string;
+  journal: string;
+  year: string;
+  abstract: string;
+  link: string;
+};
+
 // * EXPERIENCE SECTION
 
 export type ExperienceType = {
