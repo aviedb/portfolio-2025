@@ -13,6 +13,7 @@ const Experience = dynamic(() => import("../containers/Experience"));
 const Projects = dynamic(() => import("../containers/Projects"));
 const Feedbacks = dynamic(() => import("../containers/Feedbacks"));
 const GithubProfileCard = dynamic(() => import("../components/GithubProfileCard"));
+const Publications = dynamic(() => import("../containers/Publications"));
 
 export default function Home({ githubProfileData }: { githubProfileData: GithubUserType }) {
   return (
@@ -28,6 +29,7 @@ export default function Home({ githubProfileData }: { githubProfileData: GithubU
         <Experience />
         <Feedbacks />
         <Projects />
+        <Publications />
         <GithubProfileCard {...githubProfileData} />
       </main>
     </div>
