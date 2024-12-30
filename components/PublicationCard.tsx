@@ -26,9 +26,12 @@ const PublicationCard = ({ title, authors, journal, year, abstract, link }: Publ
                 <span className="badge badge-primary mr-2">{year}</span>
                 <h6 className="mb-0 text-primary">{journal}</h6>
               </div>
-              <div className="d-flex align-items-start">
+              <div
+                className="d-flex align-items-start"
+                onClick={() => setIsExpanded(!isExpanded)}
+                style={{ cursor: "pointer" }}
+              >
                 <button
-                  onClick={() => setIsExpanded(!isExpanded)}
                   className="btn btn-link p-0"
                   style={{
                     border: 'none',
