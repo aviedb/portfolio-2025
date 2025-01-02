@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "eslint *.{js,jsx,ts,tsx}",
     "lint:fix": "eslint *.{js,jsx,ts,tsx} --fix",
@@ -26,6 +26,7 @@
     "headroom.js": "^0.12.0",
     "moment": "^2.29.1",
     "next": "^13.2.1",
+    "next-sitemap": "^4.2.3",
     "nouislider": "^15.2.0",
     "react": "^18.2.0",
     "react-datetime": "^3.0.4",
